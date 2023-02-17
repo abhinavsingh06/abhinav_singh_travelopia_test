@@ -10,7 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_02_17_091900) do
+ActiveRecord::Schema[7.0].define(version: 2023_02_17_093405) do
+  create_table "trips", force: :cascade do |t|
+    t.integer "place", default: 0, null: false
+    t.integer "no_of_person", default: 1, null: false
+    t.integer "budget_per_person", null: false
+    t.integer "traveler_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["traveler_id"], name: "index_trips_on_traveler_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "name", null: false
     t.string "email", null: false
