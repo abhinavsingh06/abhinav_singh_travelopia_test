@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import '../../stylesheets/header.css'
 
 function Header() {
@@ -7,8 +7,8 @@ function Header() {
     <div className="header">
       <a href="#default" className="logo">Travelopia enquiry</a>
       <div className="header-right">
-        <Link to='/' className="active">Home</Link>
-        <Link to='/list'>List</Link>
+        <NavLink to='/' activeClassName="active">Home</NavLink>
+        <NavLink to='/list' activeClassName="active">List</NavLink>
       </div>
     </div>
   )

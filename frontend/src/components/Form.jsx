@@ -69,7 +69,7 @@ export default function Form() {
                       </div>
 
                       <div className="col-span-6 sm:col-span-3">
-                        <Input name="budget_per_person" value={formData.budget_per_person}label="Budget per person" onChange={handleInputChange}/>
+                        <Input name="budget_per_person" value={formData.budget_per_person}label="Budget per person($)" onChange={handleInputChange}/>
                       </div>
 
                     </div>
