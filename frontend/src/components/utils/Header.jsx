@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import '../../stylesheets/header.css'
 
 function Header() {
@@ -6,8 +7,8 @@ function Header() {
     <div className="header">
       <a href="#default" className="logo">Travelopia enquiry</a>
       <div className="header-right">
-        <a className="active" href="#home">Home</a>
-        <a href="#contact">List</a>
+        <Link to='/' className="active">Home</Link>
+        <Link to='/list'>List</Link>
       </div>
     </div>
   )
