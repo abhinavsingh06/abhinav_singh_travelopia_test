@@ -6,7 +6,7 @@ class Api::V1::SubmissionsController < ApplicationController
   def create
     @user = User.new(name: user_params[:name], email: user_params[:email])
     if @user.save
-      @trip = @user.trips.build(no_of_person: user_params[:no_of_person], country: user_params[:country], budget_per_person: user_params[:budget_per_person] )
+      @trip = @user.trips.build(no_of_person: user_params[:no_of_person].to_i, country: user_params[:country].to_i, budget_per_person: user_params[:budget_per_person].to_i )
       if @trip.save
         render status: :ok, json: { notice: "Succesfully created the trip." }
       else
