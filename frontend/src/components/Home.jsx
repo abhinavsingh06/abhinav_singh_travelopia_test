@@ -1,10 +1,12 @@
 import React from 'react'
-import Header from './common/Header';
+import Header from './utils/Header';
+import Form from './Form';
 
 function Home() {
   return (
     <>
-      <Header/>
+      <Header />
+      <Form/>
     </>      
   )
 }

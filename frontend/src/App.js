@@ -1,12 +1,12 @@
-import Header from "./components/utils/Header";
+import Home from "./components/Home";
 
 function App() {
   return (
-    <div>
-      <header>
-        <Header/>
-      </header>
-    </div>
+    <>
+      <div>
+        <Home/>
+      </div>
+    </>
   );
 }
 
