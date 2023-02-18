@@ -3,10 +3,10 @@ import '../../stylesheets/header.css'
 
 function Header() {
   return (
-    <div class="header">
-      <a href="#default" class="logo">Travelopia enquiry</a>
-      <div class="header-right">
-        <a class="active" href="#home">Home</a>
+    <div className="header">
+      <a href="#default" className="logo">Travelopia enquiry</a>
+      <div className="header-right">
+        <a className="active" href="#home">Home</a>
         <a href="#contact">List</a>
       </div>
     </div>
