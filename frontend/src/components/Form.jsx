@@ -3,7 +3,6 @@ import axios from 'axios';
 import Input from "./utils/Input";
 import Select from './utils/Select';
 
-
 export default function Form() {
   const [formData, setFormData] = useState({
     name: '',
@@ -23,9 +22,11 @@ export default function Form() {
     axios.post('http://localhost:3000/api/v1/submissions', { enquiry: formData })
       .then(response => {
         console.log(response.data);
+        alert("Successfully submitted data")
       })
       .catch(error => {
         console.error(error);
+        alert("Could not submit form")
       });
   }
   
